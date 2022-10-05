@@ -132,7 +132,11 @@ class IGA:
                 vgg_on_enc = self.vgg_loss(encoded_images)
                 g_loss_enc = self.mse_loss(vgg_on_cov, vgg_on_enc)
 
+<<<<<<< HEAD
             g_loss_dec_msg = torch.tensor([.0]).to(self.device)
+=======
+            g_loss_dec_msg = torch.tensor([0])
+>>>>>>> 20040681ef050522b5ce942e262ef55a0f48643e
             if self.config.use_mc:
                 decoded_messages = self.msg_decoder(decoded_messages)
                 g_loss_dec_msg = self.mse_loss(decoded_messages, messages)
@@ -234,7 +238,11 @@ class IGA:
             vgg_on_enc = self.vgg_loss(encoded_images)
             g_loss_enc = self.mse_loss(vgg_on_cov, vgg_on_enc)
 
+<<<<<<< HEAD
         g_loss_dec_msg = torch.tensor([.0]).to(self.device)
+=======
+        g_loss_dec_msg = torch.tensor([0])
+>>>>>>> 20040681ef050522b5ce942e262ef55a0f48643e
         if self.config.use_mc:
             decoded_messages = self.msg_decoder(decoded_messages)
             g_loss_dec_msg = self.msg_coding_loss_weight * self.mse_loss(decoded_messages, messages)

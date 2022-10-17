@@ -1,6 +1,8 @@
 # IGA
 The source code for the paper "Robust Data Hiding Using Inverse Gradient Attention".
 
+https://arxiv.org/abs/2011.10850
+
 ![](/figs/iga_framework.png)
 
 ## Installation
